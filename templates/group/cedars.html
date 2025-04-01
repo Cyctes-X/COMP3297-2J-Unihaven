@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cedars</title>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            {% if messages %}
+                {% for message in messages %}
+                    alert('{{ message }}');
+                {% endfor %}
+            {% endif %}
+        };
+    </script>
+
+    
+</head>
+<body>
+    <h1>Welcome to cedars Page</h1>
+</body>
+</html>

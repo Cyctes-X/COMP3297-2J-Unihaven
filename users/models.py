@@ -11,3 +11,20 @@ class UnihavenUser(AbstractUser):
 
     def __str__(self):
         return self.username
+
+# from django.db.models.signals import post_migrate
+# from django.contrib.auth.models import Group
+# from django.apps import AppConfig
+
+
+# def create_user_groups(sender, **kwargs):
+#     groups = ['HKU member', 'CEDARS', 'property owner']
+#     for group in groups:
+#         Group.objects.get_or_create(name=group)
+
+
+# class UsersConfig(AppConfig):
+#     name = 'Users'
+
+#     def ready(self):
+#         post_migrate.connect(create_user_groups, sender=self)
