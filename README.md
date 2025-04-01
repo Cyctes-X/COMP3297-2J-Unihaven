@@ -32,7 +32,7 @@ UniHaven is a web-based accommodation platform designed specifically for HKU stu
 
 ## **Project Structure**
 ```
-unihaven_2j/
+COMP3297-2J-Unihaven/
 │
 ├── accommodations/             # App for managing accommodations
 │   ├── admin.py                # Admin integration for accommodations
