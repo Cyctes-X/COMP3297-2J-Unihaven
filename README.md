@@ -34,6 +34,14 @@ UniHaven is a web-based accommodation platform designed specifically for HKU stu
 ```
 COMP3297-2J-Unihaven/
 │
+├── templates/             
+│   ├──              
+│   ├──                 
+│   ├──               
+│   ├──                
+│   ├──               
+│   └──                 
+│
 ├── accommodations/             # App for managing accommodations
 │   ├── admin.py                # Admin integration for accommodations
 │   ├── apps.py                 # Configuration for accommodations app
