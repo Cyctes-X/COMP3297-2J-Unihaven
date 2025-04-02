@@ -5,6 +5,16 @@
 		.safe{
         user-select: none;
         }
+		.btn {
+        display: inline-block;
+        text-decoration: none;
+        border:2px solid #333333;
+        border-radius: 10px;
+        background-color: #333333;
+        font-weight: bold;
+        color: #FFFFFF;
+        user-select: none;
+        }
 		.inline-block {
 		display: inline-block;
 		border: 1px solid rgb(0, 0, 0);
@@ -14,7 +24,7 @@
 		}
 		.inline-block-sm {
 		display: inline-block;
-		width: 50px;
+		width: 150px;
 		height: 25px;
 		margin: 10px;
 		}
@@ -26,17 +36,54 @@
 <body>
 	<header>
 		<h1>Accommodation Resource</h1>
-		<div class="inline-block-sm">Filtering</div>
+		<nav class="safe">
+			<a href="Acc_Home.html" class="btn">Home Page</a>
+			<a href="Acc_ListAll.html" class="btn">More Accommodations</a>
+			<a href="Acc_Favorite.html" class="btn">My Favorite</a>
+			<a href="Acc_Contact.html" class="btn">Contact Us</a>
+		</nav>
+		<h2 class="inline-block-sm">Filtering</h2>
 		<div class="inline-block-sm">District
 			<select>
-				<option value="volvo">Volvo</option>
-				<option value="saab">Saab</option>
-				<option value="mercedes">Mercedes</option>
-				<option value="audi">Audi</option>
+				<option>Hong Kong Island</option>
+				<option>Kowloon</option>
+				<option>New Territories East</option>
+				<option>New Territories West</option>
 			</select>
 		</div>
-		<div class="inline-block-sm">
-			
+		<div class="inline-block-sm">MTR Distance
+			<select>
+				<option>Within 10 Mins</option>
+				<option>Within 5 Mins</option>
+				<option>Within 2 Mins</option>
+			</select>
+		</div>
+        <div class="inline-block-sm">Rental
+			<select>
+                <option>Lower than $5000</option>
+				<option>5000-10000$</option>
+				<option>10000-15000$</option>
+				<option>15000-20000$</option>
+                <option>More than $20000</option>
+			</select>
+		</div>
+        <div class="inline-block-sm">Saleable Area
+			<select>
+				<option>Smaller than 100ft&#x00B2;</option>
+				<option>100-200ft&#x00B2;</option>
+				<option>200-300ft&#x00B2;</option>
+				<option>300-400ft&#x00B2;</option>
+                <option>Larger than 400ft&#x00B2;</option>
+			</select>
+		</div>
+        <div class="inline-block-sm">Rooms
+			<select>
+				<option>Studio</option>
+				<option>1 Room</option>
+				<option>2 Rooms</option>
+                <option>3 Rooms</option>
+                <option>4 Rooms or More</option>
+			</select>
 		</div>
 	</header>
     <div class="inline-block">
@@ -53,11 +100,6 @@
 		<a href="Acc_Detail.html" class="btn">View Details</a>
     </div>
 
-	<div class="inline-block">
-		<img src="Temp_Pic/404.png" alt="2" width="300" height="200">
-		<h3>XXX城 X期 X座</h3>
-		<p>X層 X室 X房</p>
-		<a href="Acc_Detail.html" class="btn">View Details</a>
-    </div>
+
 </body>
 </html>
