@@ -10,10 +10,6 @@ ENV/
 env.bak/
 venv.bak/
 
-# Django migrations
-*/migrations/
-*/migrations/*
-
 # Django static files
 static/
 
