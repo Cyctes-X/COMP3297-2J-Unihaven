@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),                 # Admin panel
     path('users/', include('users.urls')),           # User-related endpoints (e.g., register, login)
-    #path('accommodations/', include('accommodations.urls')),  # Accommodation-related endpoints (e.g., search)
+    path('accommodations/', include('accommodations.urls')),  # Accommodation-related endpoints (e.g., search)
 ]
